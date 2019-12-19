@@ -8,7 +8,9 @@ body {
   font-size: 20px;
   color: #444444;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column; 
+  margin: 0px;
+   
   
 
 }
@@ -20,21 +22,134 @@ nav, footer {
 
 nav {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-left: 25px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color:black;
+  
+  
+}
+i.fa {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  margin: 0px;
+  font-size: 25px;
+}
+/*
+div.logo {
+  display: inline-block;
+  padding: 20px 15px;
+  padding-left: 70px;
+  font-size: 26px;
+}
+*/
+ul {
+  list-style: none;
+  padding-left: 0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  
+}
+
+h1 {
+  font-weight: bolder;
+  
+}
+
+h3 {
+  line-height: 1.4;
+  font-weight: normal;
+  font-size: 16px;
 }
 .about-me, .app2 {
   color: black;
-  background-color: white;
+  width: 100vw;
+  min-height: 100vh; 
+  background-color: #C6C2C2;
 }
+
+.app1, .app2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  align-items: center;
+
+}
+
+
+.about-me > img {
+  width: 25%;
+  align-self: center;
+}
+
+figcaption {
+  color: gray;
+  font-size: 10px;
+}
+
+.about-paragraphs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 400px;
+  font-size: 16px;
+
+}
+
+
 .app1 {
   color: white;
   background-color: black;
+  min-height: 100vh;
+  width: 99vw;
+}
+
+.app1-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.8;
+}
+
+.keyword {
+  color: gray;
+  font-weight: bold;
+  font-size: 22px;
+}
+.bookmarks-image {
+  width: 95%;
+}
+
+h3 {
+  max-width: 50%;
 }
 
 
@@ -43,11 +158,17 @@ header {
   padding: 12% 0;
   background-color: black;
   color: white;
+  text-align: center;
 }
 
 section {
+  text-align: center;
   min-height: 200px;
   flex-grow: 1;
   padding: 6% 0;
   background-color: #bbbbbb;
+}
+
+footer {
+  height: 100px;
 }
